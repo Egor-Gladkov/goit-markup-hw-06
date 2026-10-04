@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -28,11 +34,10 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
 .sr-only {
@@ -40,20 +45,19 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  clip-path: inset(100%);
   overflow: hidden;
 }
 
 .section-title {
   margin-bottom: 72px;
-
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -61,7 +65,6 @@ img {
 
 .card-title {
   margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -74,4 +77,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
 }

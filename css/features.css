@@ -1,23 +1,64 @@
 .features {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 96px 0;
 }
 
 .features-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .features-list > li {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
+
+.features-list .card-title {
+  text-align: center;
+}
+
 .icon-hero {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  height: 112px;
-  background: #f4f4fd;
-  margin-bottom: 8px;
+  background-color: #f4f4fd;
+}
+
+@media (min-width: 768px) {
+  .features-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .features-list > li {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .features-list .card-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+
+  .features-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .features-list > li {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .icon-hero {
+    display: flex;
+  }
 }

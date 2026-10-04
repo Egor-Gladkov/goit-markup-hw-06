@@ -30,21 +30,26 @@
         <a class="logo" href="./index.html">
           <span class="span">Web</span>Studio
         </a>
-
+        <button class="menu-open-btn" type="button" aria-label="Open menu">
+          <svg class="menu-open-icon" width="24" height="16">
+            <use href="./images/icons.svg#illustration12"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="navigation-list">
             <li>
-              <a class="navigation-link is-active" href="#features">Features</a>
+              <a class="navigation-link is-active" href="#features">
+                Features
+              </a>
             </li>
             <li>
-              <a class="navigation-link" href="#team">Team</a>
+              <a class="navigation-link" href="#team"> Team </a>
             </li>
             <li>
-              <a class="navigation-link" href="#portfolio">Portfolio</a>
+              <a class="navigation-link" href="#portfolio"> Portfolio </a>
             </li>
           </ul>
         </nav>
-
         <address class="address">
           <ul class="contacts-list">
             <li>
@@ -66,7 +71,9 @@
       <section class="hero" id="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -134,7 +141,12 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                src="./images/team-1.jpg"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-text-content">
                 <h3 class="card-title">Mark Guerrero</h3>
                 <p class="card-text">Product Designer</p>
@@ -172,7 +184,12 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/team-2.jpg"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-text-content">
                 <h3 class="card-title">Tom Ford</h3>
                 <p class="card-text">Frontend Developer</p>
@@ -210,7 +227,12 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                src="./images/team-3.jpg"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-text-content">
                 <h3 class="card-title">Camila Garcia</h3>
                 <p class="card-text">Marketing</p>
@@ -248,7 +270,12 @@
             </li>
 
             <li class="team-card">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                src="./images/team-4.jpg"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-text-content">
                 <h3 class="card-title">Daniel Wilson</h3>
                 <p class="card-text">UI Designer</p>
@@ -291,12 +318,15 @@
       <section class="portfolio" id="portfolio">
         <div class="container">
           <h2 class="section-title">Our Portfolio</h2>
-
           <ul class="portfolio-list">
             <li class="portfolio-card">
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio.jpg"
+                  srcset="
+                    ./images/portfolio.jpg    1x,
+                    ./images/portfolio@2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                 />
@@ -318,6 +348,10 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio1.jpg"
+                  srcset="
+                    ./images/portfolio1.jpg    1x,
+                    ./images/portfolio1@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                 />
@@ -340,6 +374,10 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio2.jpg"
+                  srcset="
+                    ./images/portfolio2.jpg    1x,
+                    ./images/portfolio2@2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                 />
@@ -359,7 +397,12 @@
 
             <li class="portfolio-card">
               <div class="portfolio-image-wrap">
-                <img src="./images/Media.jpg" alt="Taxi Service" width="360" />
+                <img
+                  src="./images/Media.jpg"
+                  srcset="./images/Media.jpg 1x, ./images/Media@2x.jpg 2x"
+                  alt="Taxi Service"
+                  width="360"
+                />
                 <div class="overlay">
                   <p class="overlay-text">
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -378,6 +421,10 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio3.jpg"
+                  srcset="
+                    ./images/portfolio3.jpg    1x,
+                    ./images/portfolio3@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                 />
@@ -400,6 +447,10 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio4.jpg"
+                  srcset="
+                    ./images/portfolio4.jpg    1x,
+                    ./images/portfolio4@2x.jpg 2x
+                  "
                   alt="Online Courses"
                   width="360"
                 />
@@ -499,6 +550,68 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <button class="mobile-menu-close" type="button" aria-label="Close menu">
+        <svg width="8" height="8">
+          <use href="./images/icons.svg#close1"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="mobile-menu-link is-active" href="#features">Features</a>
+          </li>
+          <li><a class="mobile-menu-link" href="#team">Team</a></li>
+          <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-bottom">
+        <ul class="mobile-menu-contacts">
+          <li>
+            <a class="mobile-menu-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-menu-email" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu-socials">
+          <li>
+            <a class="mobile-menu-social-link" href="#" aria-label="Instagram"
+              ><svg width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-social-link" href="#" aria-label="Twitter"
+              ><svg width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-social-link" href="#" aria-label="Facebook"
+              ><svg width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="mobile-menu-social-link" href="#" aria-label="LinkedIn"
+              ><svg width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="backdrop" id="modal">
       <div class="modal-wind">
         <button class="modal-close" type="button">
