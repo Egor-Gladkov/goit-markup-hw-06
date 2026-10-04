@@ -31,8 +31,8 @@
           <span class="span">Web</span>Studio
         </a>
         <button class="menu-open-btn" type="button" aria-label="Open menu">
-          <svg class="menu-open-icon" width="24" height="16">
-            <use href="./images/icons.svg#illustration12"></use>
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#menu"></use>
           </svg>
         </button>
         <nav class="nav">
@@ -475,8 +475,7 @@
 
     <footer class="footer" id="footer">
       <div class="container">
-        <div class="footer-dump">
-          <div class="footer-left">
+        <div class="footer-left">
             <a class="footer-logo" href="./index.html">
               <span>Web</span>Studio
             </a>
@@ -523,8 +522,8 @@
                 </a>
               </li>
             </ul>
-          </div>
-          <div class="footer-subscribe">
+        </div>
+        <div class="footer-subscribe">
             <p class="footer-caption">Subscribe</p>
             <form>
               <div class="footer-label">
@@ -546,40 +545,38 @@
                 </div>
               </div>
             </form>
-          </div>
         </div>
       </div>
     </footer>
 
     <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
-      <button class="mobile-menu-close" type="button" aria-label="Close menu">
-        <svg width="8" height="8">
-          <use href="./images/icons.svg#close1"></use>
-        </svg>
-      </button>
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-list">
-          <li>
-            <a class="mobile-menu-link is-active" href="#features">Features</a>
-          </li>
-          <li><a class="mobile-menu-link" href="#team">Team</a></li>
-          <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
-        </ul>
-      </nav>
-      <div class="mobile-menu-bottom">
-        <ul class="mobile-menu-contacts">
-          <li>
-            <a class="mobile-menu-phone" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li>
-            <a class="mobile-menu-email" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
-        <ul class="mobile-menu-socials">
+      <div class="mobile-menu-container">
+        <button class="mobile-menu-close" type="button" aria-label="Close menu">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#close1"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-nav">
+          <ul class="mobile-menu-list">
+            <li>
+              <a class="mobile-menu-link is-active" href="#features">Features</a>
+            </li>
+            <li><a class="mobile-menu-link" href="#team">Team</a></li>
+            <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-bottom">
+          <address>
+            <ul class="mobile-menu-contacts">
+              <li>
+                <a class="mobile-menu-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="mobile-menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mobile-menu-socials">
           <li>
             <a class="mobile-menu-social-link" href="#" aria-label="Instagram"
               ><svg width="24" height="24">
@@ -608,7 +605,8 @@
               </svg>
             </a>
           </li>
-        </ul>
+          </ul>
+        </div>
       </div>
     </div>
 

@@ -13,6 +13,16 @@
 }
 
 .features-list .card-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+
+.features-list .card-text {
+  font-weight: 500;
+}
+
+.features-list .card-title {
   text-align: center;
 }
 
@@ -56,6 +66,16 @@
 
   .features-list > li {
     width: calc((100% - 72px) / 4);
+  }
+
+  .features-list .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .features-list .card-text {
+    font-weight: 400;
   }
 
   .icon-hero {
