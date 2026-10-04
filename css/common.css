@@ -35,7 +35,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 320px;
+  max-width: 428px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -82,7 +82,7 @@ img {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 16px;
+    padding: 0 32px;
   }
 }
 
