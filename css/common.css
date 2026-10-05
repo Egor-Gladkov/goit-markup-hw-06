@@ -109,3 +109,6 @@ img {
     padding: 0 15px;
   }
 }
+address {
+  font-style: normal;
+}
