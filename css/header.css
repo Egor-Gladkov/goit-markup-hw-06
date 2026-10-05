@@ -27,6 +27,7 @@
 .nav,
 .address {
   display: none;
+  font-style: normal;
 }
 
 .menu-open-btn {
