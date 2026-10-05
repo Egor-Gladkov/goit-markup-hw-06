@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -35,7 +41,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 428px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -65,14 +71,15 @@ img {
 
 .card-title {
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
 .card-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -82,11 +89,21 @@ img {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+    padding: 0 16px;
   }
 }
 
 @media (min-width: 1158px) {
+  .card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .card-text {
+    font-weight: 400;
+  }
+
   .container {
     max-width: 1158px;
     padding: 0 15px;

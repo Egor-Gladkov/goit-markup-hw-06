@@ -13,6 +13,10 @@
 }
 
 .features-list .card-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
 }
 
